@@ -22,6 +22,7 @@ public class PostmanEchoTest {
                 .statusCode(200)
                 .contentType(ContentType.JSON)
                 .body("data", equalTo("I hope, its gonna be work"))
+
                 .body("headers.content-length", equalTo("25"));
 
     }
